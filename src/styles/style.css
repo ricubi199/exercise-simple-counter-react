@@ -1,19 +1,19 @@
 .seconds-counter {
     margin-top: 200px;
+    padding-top:20px;
+    padding-bottom: 20px;
     width: 500px;
-    height: 120px;
+    height: 140px;
     background-color: black;
 }
 
 .seconds-counter div {
     display: inline-block;
     font-size: 70px;
-    background-color: black;
-    color: white;
     padding-left: 30px;
     
 }
 
-.seconds-counter #button {
+.seconds-counter .badge {
     font-size: 60px;
 }
