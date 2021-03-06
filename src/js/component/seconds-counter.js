@@ -5,15 +5,19 @@ export function SecondsCounter(props) {
 	return (
 		<div className="seconds-counter">
 			<div className="clock-icon">
-				<i className="fas fa-clock"></i>
+				<span class="badge text-white">
+					<i className="fas fa-clock"></i>
+				</span>
 			</div>
 			<div className="second2">
-				<button id="button" className="btn btn-secondary">
-					{props.digit2 % 10}
-				</button>
+				<span class="badge text-white">{props.digit2 % 10}</span>
 			</div>
-			<div className="second1">{props.digit1 % 10}</div>
-			<div className="second0">{props.digit0 % 10}</div>
+			<div className="second1">
+				<span class="badge text-white">{props.digit1 % 10}</span>
+			</div>
+			<div className="second0">
+				<span class="badge text-white">{props.digit0 % 10}</span>
+			</div>
 		</div>
 	);
 }
