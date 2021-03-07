@@ -16,14 +16,17 @@ let counter = 0;
 let random0 = 0;
 let random1 = 0;
 let random2 = 0;
+let random3 = 0;
+let random4 = 0;
+let random5 = 5;
 
 setInterval(function(props) {
 	random0 = Math.floor(counter / 1);
 	random1 = Math.floor(counter / 10);
 	random2 = Math.floor(counter / 100);
-	// random3 = Math.floor(seconds_counter / 1000);
-	// random4 = Math.floor(seconds_counter / 10000);
-	// random5 = Math.floor(seconds_counter / 10000);
+	random3 = Math.floor(counter / 1000);
+	random4 = Math.floor(counter / 10000);
+	random5 = Math.floor(counter / 100000);
 
 	counter++;
 	ReactDOM.render(
@@ -31,10 +34,12 @@ setInterval(function(props) {
 			digit0={random0}
 			digit1={random1}
 			digit2={random2}
-			//	digit3={random3}
+			digit3={random3}
+			digit4={random4}
+			digit5={random5}
 		/>,
 		document.querySelector("#app")
 	);
-}, 1000);
+}, 100);
 
 //render your react applicatio
