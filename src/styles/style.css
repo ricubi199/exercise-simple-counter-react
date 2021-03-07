@@ -1,9 +1,11 @@
 .seconds-counter {
     margin-top: 200px;
+    margin-left: 400px;
     padding-top:20px;
     padding-bottom: 20px;
-    width: 500px;
+    width: 665px;
     height: 140px;
+
     background-color: black;
 }
 
@@ -12,8 +14,4 @@
     font-size: 70px;
     padding-left: 30px;
     
-}
-
-.seconds-counter .badge {
-    font-size: 60px;
 }
